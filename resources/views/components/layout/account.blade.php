@@ -11,8 +11,6 @@
             </span>
         </button>
         <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-            <a href="#" class="dropdown-item"><i class="fa fa-user"></i> Profile</a>
-            <a href="#" class="dropdown-item"><i class="fa fa-cog"></i> Settings</a>
             <a href="{{ url('logout') }}" class="clearfix bg-master-lighter dropdown-item">
                 <span class="pull-left">Logout</span>
                 <span class="pull-right"><i class="pg-power"></i></span>

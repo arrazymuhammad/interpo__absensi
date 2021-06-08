@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Admin\Pegawai;
+use App\Models\Admin\Mahasiswa;
+
 return [
 
     /*
@@ -38,7 +41,11 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'pegawai',
+        ],
+        'mahasiswa' => [
+            'driver' => 'session',
+            'provider' => 'mahasiswa',
         ],
 
         'api' => [
@@ -66,9 +73,13 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'pegawai' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => Pegawai::class,
+        ],
+        'mahasiswa' => [
+            'driver' => 'eloquent',
+            'model' => Mahasiswa::class,
         ],
 
         // 'users' => [

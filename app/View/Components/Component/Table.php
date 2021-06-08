@@ -29,6 +29,15 @@ class Table extends Component
     function getHeader($header)
     {
         if (!$header) return [];
-        return explode("|", $header);
+        $header = explode("|", $header);
+        foreach ($header as $key => $h) {
+            preg_match_all('/{(.*?)}/s', $h, $matches);
+            if (count($matches[1]) > 0) {
+                $searchtag = $matches[0][0];
+                $param = $matches[1][0];
+                $header[$key] = ['param' => $param, 'text' => str_replace($searchtag, "", $h)];
+            }
+        }
+        return $header;
     }
 }

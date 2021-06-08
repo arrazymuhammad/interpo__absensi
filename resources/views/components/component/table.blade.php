@@ -5,7 +5,11 @@
             <th width="150px">Aksi</th>
         @endif
         @foreach ($header as $h)
-            <th>{{ $h }}</th>
+            @if (is_array($h))
+                <th {{ $h['param'] }}>{{ $h['text'] }}</th>
+            @else
+                <th>{{ $h }}</th>
+            @endif
         @endforeach
     </thead>
     <tbody>

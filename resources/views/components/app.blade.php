@@ -4,27 +4,27 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>SIMASTER UGM</title>
+    <title>ABSENSI UGM</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta content="SIMASTER UGM" name="description" />
+    <meta content="ABSENSI UGM" name="description" />
     <meta content="Ar-Razy Muhammad" name="author" />
     <link href="https://simaster.ugm.ac.id/ugmfw-assets/images/favicon.ico" rel="shortcut icon">
-    <link href="{{ url('public') }}/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url('/') }}/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet"
         type="text/css" />
-    <link href="{{ url('public') }}/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet"
+    <link href="{{ url('/') }}/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet"
         type="text/css" />
-    <link href="{{ url('public') }}/assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet"
+    <link href="{{ url('/') }}/assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet"
         type="text/css" media="screen" />
-    <link href="{{ url('public') }}/assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"
+    <link href="{{ url('/') }}/assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"
         media="screen" />
-    <link href="{{ url('public') }}/assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css"
+    <link href="{{ url('/') }}/assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css"
         media="screen" />
-    <link href="{{ url('public') }}/pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-    <link class="main-stylesheet" href="{{ url('public') }}/pages/css/pages.css" rel="stylesheet" type="text/css" />
-    <link class="main-stylesheet" href="{{ url('public') }}/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url('/') }}/pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="{{ url('/') }}/pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="{{ url('/') }}/assets/css/style.css" rel="stylesheet" type="text/css" />
     @stack('style')
     @if ($extendable('datatable'))
         <link href="{{ url('https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css') }}"
@@ -45,7 +45,7 @@
             <div class="">
                 <div class="brand inline" style="width: 250px; text-align: center; padding-left: 0;">
                     <h4>
-                        SIMASTER
+                        ABSENSI UGM
                     </h4>
                 </div>
             </div>
@@ -75,22 +75,22 @@
             </div>
         </div>
     </div>
-    <script src="{{ url('public') }}/assets/plugins/pace/pace.min.js" type="text/javascript"></script>
-    <script src="{{ url('public') }}/assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="{{ url('public') }}/assets/plugins/modernizr.custom.js" type="text/javascript"></script>
-    <script src="{{ url('public') }}/assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="{{ url('public') }}/assets/plugins/popper/umd/popper.min.js" type="text/javascript"></script>
-    <script src="{{ url('public') }}/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="{{ url('public') }}/assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
-    <script src="{{ url('public') }}/assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript">
+    <script src="{{ url('/') }}/assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/popper/umd/popper.min.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript">
     </script>
-    <script src="{{ url('public') }}/assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript">
+    <script src="{{ url('/') }}/assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript">
     </script>
-    <script src="{{ url('public') }}/assets/plugins/jquery-actual/jquery.actual.min.js"></script>
-    <script src="{{ url('public') }}/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-    <script src="{{ url('public') }}/assets/plugins/select2/js/select2.full.min.js"></script>
-    <script src="{{ url('public') }}/assets/plugins/classie/classie.js"></script>
-    <script src="{{ url('public') }}/assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <script src="{{ url('/') }}/assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="{{ url('/') }}/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="{{ url('/') }}/assets/plugins/select2/js/select2.full.min.js"></script>
+    <script src="{{ url('/') }}/assets/plugins/classie/classie.js"></script>
+    <script src="{{ url('/') }}/assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
     @if ($extendable('datatable'))
         <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
@@ -103,15 +103,15 @@
     @if ($extendable('select2'))
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     @endif
-    <script src="{{ url('public') }}/pages/js/pages.js" defer></script>
-    <script src="{{ url('public') }}/assets/js/laravel.js"></script>
+    <script src="{{ url('/') }}/pages/js/pages.js" defer></script>
+    <script src="{{ url('/') }}/assets/js/laravel.js"></script>
     <script>
-        const BASE_URL = "{{ url('public') }}";
+        const BASE_URL = "{{ url('/') }}";
         const CURRENT_URL = '{{ url()->current() }}'
         const CSRF_TOKEN = '{{ csrf_token() }}';
 
     </script>
-    <script src="{{ url('public') }}/assets/js/script.js"></script>
+    <script src="{{ url('/') }}/assets/js/script.js"></script>
     @stack('script')
 </body>
 
